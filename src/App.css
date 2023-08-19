@@ -1,38 +1,141 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header{
+  display: flex;
+  justify-content: space-between;
+  height: 3rem;
+  border-bottom: 1px solid black;
+  padding:10px;
+  align-items: center;
+  box-shadow:0 0 10px black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo h1{
+  font-weight: bolder;
+  color: darkblue;
+}
+
+.logo-edit{
+  color: lightblue;
+  text-decoration: underline;
+}
+
+nav ul{
+  display: flex;
+}
+
+nav{
+  margin-right: 150px;
+}
+
+.account-details{
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.account-details .icons:hover{
+  color: darkblue;
+}
+
+nav ul li{
+  list-style-type: none;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.hero-section{
+  width: 100%;
+  display: flex;
+  margin-top: 90px;
+  position: relative;
+}
+
+.background{
+  position: absolute;
+  z-index: -1;
+  top: -115px;
+  width: 100%;
+}
+
+
+
+.hero-text-section{
+  width: 50%;
+  padding-left: 50px;
+}
+
+.hero-text-section h1{
+    background: linear-gradient(to right, darkblue 10%, lightblue 30%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.hero-text-section p{
+  font-size: 18px;
+  padding-right: 30px;
+}
+
+.hero-text-section button{
+  background: linear-gradient(to right, darkblue, lightblue);
+  border-radius: 15px;
+  height: 30px;
+  border: none;
+  width: 120px;
+  color: white;
+  position: relative;
+  cursor: pointer;
+  transition: all .5s;
+    transition-timing-function: ease-out;
+}
+
+.angle-icon{
+  margin-top: 1px;
+  position: absolute;
+  transition: all .5s;
+    transition-timing-function: ease;
+}
+
+.hero-text-section > button:hover .angle-icon{
+  transform: translateX(9px);
+  
+}
+
+.hero-img{
+  width: 50%;
+}
+
+.hero-img img{
+  width: 75%;
+  height: auto;
+}
+
+.social-icons{
+  color: black;
+  height: 20px;
+  width: 20px;
+  margin-bottom: 15px;
+}
+
+.socials{
   display: flex;
   flex-direction: column;
+  position: absolute;
+  right: 20px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  bottom: 150px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.social-icons:hover{
+  color: darkblue;
+  cursor: pointer;
 }
