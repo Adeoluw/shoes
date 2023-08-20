@@ -103,11 +103,17 @@ nav ul li{
   position: absolute;
   transition: all .5s;
     transition-timing-function: ease;
+    right: 15px;
 }
 
-.hero-text-section > button:hover .angle-icon{
+.shop-button:hover .angle-icon{
   transform: translateX(9px);
   
+}
+
+.shop-button:hover .button-animate{
+  transform: rotateX(360deg);
+
 }
 
 .hero-img{
@@ -139,3 +145,153 @@ nav ul li{
   color: darkblue;
   cursor: pointer;
 }
+
+.shop-button{
+  text-align: center;
+  background: linear-gradient(to right, darkblue, lightblue);
+  height: 35px;
+  width: 130px;
+  color: white;
+  border-radius: 15px;
+  padding: 0;
+  border: 1px solid none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  margin-top: 50px;
+}
+
+.button-animate{
+  padding-right: 10px;
+    transition: all .5s;
+      transition-timing-function: ease;
+}
+
+.shoe-card{
+  /* width: 210px; */
+  width: 23%;
+  height: 390px;
+  border: 1px solid none;
+  padding: 20px;
+  box-shadow:3px 5px 5px 5px lightblue;
+  transition: all .5s;
+  transition-timing-function: ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.shoe-card:hover img{
+   transform: scale(1.2);
+}
+
+.shoe-card img{
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right:auto ;
+  transition: all .5s;
+    transition-timing-function: ease;
+}
+
+.shoes{
+  /* display: grid;
+  grid-template-columns: auto auto auto auto;
+  row-gap: 20px;
+  column-gap: 0;
+  padding-inline: 50px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+  row-gap: 30px;
+}
+
+.product-text{
+  text-align: center;
+}
+/* 
+@keyframes textflip {
+  0%{
+    transform: rotateX('0deg');
+  }
+
+  50%{
+    transform: rotateX('180deg');
+  }
+
+  100%{
+    transform: rotateX('360deg');
+  }
+} */
+
+.products{
+  margin-top: 200px;
+  text-align: center;
+}
+
+.products > h1{
+background: linear-gradient(to right, lightblue 40%, darkblue 55%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;}
+
+  .star-icon-filled{
+    color: yellow;
+    
+  }
+  .star-icon-empty{
+    color: transparent;
+    
+  }
+
+  .rating-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rating-button button{
+    width: 100px;
+    height: 25px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background: linear-gradient(to right,
+      darkblue ,
+      lightblue );
+      cursor: pointer;
+  }
+
+  .card-icons{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 20px;
+    left: -10px;
+    opacity: 0;
+    z-index: -1;
+    transition: all .5s;
+    transition-timing-function: ease;
+    
+  }
+
+  .shoe-card:hover .card-icons{
+    left: 15px;
+    opacity: 1;
+    z-index: 10;
+  }
+
+  .card-animated-icon:hover{
+    color: darkblue;
+  }
+
+  .card-animated-icon{
+    margin-bottom: 10px;
+    border: 1px solid grey;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+  }
