@@ -6,18 +6,28 @@ const Nav = () => {
   return (
     <div>
       <header className="App-header">
-        <div className="logo">
+        <div className="logo" id='top'>
           <h1>
             Shoe<span className="logo-edit">s</span>
           </h1>
         </div>
         <nav>
           <ul>
-            <li>Home</li>
-            <li>Products</li>
-            <li>About</li>
-            <li>Reviews</li>
-            <li>Services</li>
+            <li>
+              <a href="#hero">Home</a>
+            </li>
+            <li>
+              <a href="#products">Products</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#reviews">Reviews</a>
+            </li>
+            <li>
+              <a href="#services">Services</a>
+            </li>
           </ul>
         </nav>
         <div className="account-details">

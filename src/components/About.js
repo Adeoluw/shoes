@@ -24,7 +24,7 @@ const About = () => {
         setCurrentProjection(Redshoe4)
     }
   return (
-    <div className="about-con">
+    <div className="about-con" id="about">
       <h1>ABOUT</h1>
       <div className="about-section">
         <div className="image-display">
@@ -67,6 +67,9 @@ const About = () => {
             Rackham.
           </p>
         </div>
+      </div>
+      <div className="about-button-con">
+        <button className="about-button">Shop now</button>
       </div>
     </div>
   );

@@ -3,11 +3,11 @@ import Shoes from './Shoes'
 
 const Products = () => {
   return (
-    <div className='products'>
-          <h1>PRODUCTS</h1>
-          <Shoes />
+    <div className="products" id="products">
+      <h1>PRODUCTS</h1>
+      <Shoes />
     </div>
-  )
+  );
 }
 
 export default Products

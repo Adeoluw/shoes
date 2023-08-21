@@ -13,7 +13,7 @@ import background from "../image/bg1.png";
 const Hero = () => {
   return (
     <>
-      <section className="hero-section">
+      <section className="hero-section" id='hero'>
         <div className="hero-text-section">
           <h1>
             NIKE <br /> COLLECTION

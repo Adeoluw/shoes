@@ -1,11 +1,12 @@
 *{
   box-sizing: border-box;
-
+  scroll-behavior: smooth;
 }
 
 body{
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 header{
@@ -57,6 +58,7 @@ nav ul li{
   display: flex;
   margin-top: 90px;
   position: relative;
+  align-items: center;
 }
 
 .background{
@@ -78,11 +80,12 @@ nav ul li{
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    font-size: 60px;
 }
 
 .hero-text-section p{
-  font-size: 18px;
-  padding-right: 30px;
+  font-size: 20px;
+    padding-right: 50px;
 }
 
 .hero-text-section button{
@@ -235,7 +238,8 @@ nav ul li{
 background: linear-gradient(to right, lightblue 40%, darkblue 55%);
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent;}
+  color: transparent;
+}
 
   .star-icon-filled{
     color: yellow;
@@ -369,4 +373,313 @@ background: linear-gradient(to right, lightblue 40%, darkblue 55%);
 
 .about-con{
   margin-top: 120px;
+}
+
+.about-button-con{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.about-button{
+  width: 100px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid darkblue;
+  box-shadow: 1px 1px 3px black;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+.about-button:hover{
+  background-color: darkblue;
+}
+
+
+.testimonials-con{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.testmonial{
+  width: 30%;
+  box-shadow: 1px 1px 10px black;
+  height: 250px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.reviewer{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.reviewer-img{
+  width: 50px;
+}
+
+.reviewer-img img{
+  width: 100%;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: all .5s;
+  transition-timing-function: ease-in-out;
+}
+
+.reviewer-img:hover img{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.reviewer-name-rating{
+  margin-left: 20px;
+}
+
+.reviewer-name h3{
+  margin: 0;
+  padding: 0;
+}
+
+.testimonials-section h1{
+  text-align: center;
+}
+
+.testimonials-section{
+  margin-top: 150px;
+}
+
+.review-span{
+  background: linear-gradient(to right, lightblue 40%, darkblue 55%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.services{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.service-icon{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: darkorange;
+  width: 70px;
+  height: 70px;
+
+}
+
+.service{
+  text-align: center;
+}
+
+.services-section h1{
+  text-align: center;
+}
+
+.services-section{
+  margin-top: 100px;
+}
+
+.service-span{
+    background: linear-gradient(to right, lightblue 40%, darkblue 55%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+}
+
+.service-text{
+  padding-inline: 100px;
+}
+
+.service-text p{
+  color: grey;
+}
+
+.login-image{
+  width: 50%;
+}
+
+.login-image img{
+  width: 100%;
+}
+
+.login-section{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  position: relative;
+}
+
+.login-form input{
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid darkblue;
+}
+
+.login-form label p{
+  margin: 0;
+  margin-top: 20px;
+}
+
+.login-form-section{
+  margin-top: 70px;
+  width: 50%;
+  margin-left: 45px;
+}
+
+.login-form-section h2{
+  font-size: 50px;
+}
+
+.login-form form{
+  width: 50%;
+}
+
+
+.login-form label{
+  font-size: 15px;
+}
+
+.login-form-bg{
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    width: 100%;
+
+}
+
+.login-button{
+  width: 50%;
+  margin-top: 30px;
+  height: 29px;
+  /* background-color: lightblue; */
+  border: none;
+  background: linear-gradient(to right, darkblue, lightblue);
+  cursor: pointer;
+}
+
+.contact ul li{
+  list-style-type: none;
+  padding-block: 5px;
+}
+
+.help ul li{
+  list-style-type: none;
+  padding-block: 5px;
+}
+
+.stores ul li{
+  list-style-type: none;
+  padding-block: 5px;
+}
+
+.footer-socials{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.email-form{
+  display: flex;
+  flex-direction: column;
+}
+
+.email-form input{
+  border-radius: 5px;
+  height: 25px;
+}
+
+.email-form button{
+  width: 50%;
+  float: left;
+  margin-left: auto;
+  margin-top: 5px;
+  height: 30px;
+  border-radius: 15px;
+  background: linear-gradient(to right, darkblue, lightblue);
+  color: white;
+  border: none;
+}
+
+footer{
+  background-color: #f3f1f1;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  height: 100%;
+}
+
+footer h1{
+  color: darkslateblue;
+}
+
+.footer-icon{
+  width: 30px;
+  height: 30px;
+  border: 1px solid none;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.footer-icon:hover{
+  cursor: pointer;
+  /* animation: iconanimate .2s ease-in-out 0s 1; */
+  
+}
+
+/* @keyframes iconanimate {
+  0%{
+    background: linear-gradient(to right, darkblue 0%, transparent 0%);
+  }
+
+  25%{
+    background: linear-gradient(to right, darkblue 25%, transparent 0%);
+  }
+
+  50%{
+    background: linear-gradient(to right, darkblue 50%, transparent 0%);
+  }
+
+  75%{
+    background: linear-gradient(to right, darkblue 75%, transparent 0%);
+  }
+
+  100%{
+        background: linear-gradient(to right, darkblue 100%, transparent 0%);
+  }
+
+
+} */
+
+nav ul li a{
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav ul li a:hover{
+  color: darkblue;
+}
+
+.to-top{
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  bottom: 100px;
+  right: 0;
+  z-index: 1000;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 4px black;
 }
