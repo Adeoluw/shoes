@@ -572,15 +572,43 @@ background: linear-gradient(to right, lightblue 40%, darkblue 55%);
   padding-block: 5px;
 }
 
+.contact ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .help ul li{
   list-style-type: none;
   padding-block: 5px;
+}
+
+.help{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.help ul{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .stores ul li{
   list-style-type: none;
   padding-block: 5px;
 }
+/* 
+.stores{
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
+} */
 
 .footer-socials{
   display: flex;
@@ -615,6 +643,7 @@ footer{
   justify-content: space-evenly;
   text-align: center;
   height: 100%;
+  margin-top: 50px;
 }
 
 footer h1{
@@ -682,4 +711,127 @@ nav ul li a:hover{
   justify-content: center;
   align-items: center;
   box-shadow: 1px 1px 4px black;
+}
+
+@media only screen and (max-width:946px) {
+    header{
+      width: 100%;
+    }
+
+    nav{
+      margin-right: 0;
+    }
+
+    .service{
+      width: 30%;
+    }
+
+    .hero-section{
+      flex-direction: column;
+    }
+
+    .hero-text-section{
+      width: 100%;
+    }
+
+    .hero-img{
+      width: 100%;
+      margin-top: 50px;
+    }
+
+    .service-icon{
+      width: 60px;
+    }
+
+    .services{
+      flex-direction: column;
+    }
+
+    .service{
+      width: auto;
+      margin-top: 40px;
+    }
+
+    .service-text{
+      padding-inline: 230px;
+    }
+
+    .shoe-card{
+      width: 220px;
+      height: 350px;
+    }
+
+    .about-section{
+      display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-display {
+      width: 100%;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .about-text {
+      padding: 20px;
+      border: 1px solid darkblue;
+      box-shadow: 1px 1px 3px black;
+      width: 90%;
+      margin: 20px;
+      border-radius: 10px;
+    }
+
+    .testmonial{
+      width: 45%;
+    }
+
+    .hero-img img {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      height: auto;
+    }
+
+    .background{
+      top: 0;
+    }
+
+    .login-section{
+      flex-direction: column;
+    }
+
+    .login-form-bg {
+      position: absolute;
+      z-index: -1;
+      right: 0;
+      bottom: 0;
+      transform: rotate(180deg);
+      width: 100%;
+    }
+
+  .login-image {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .login-form-section {
+    margin-top: 70px;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    margin-left: 0;
+  }
+  .login-form{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
 }

@@ -17,7 +17,7 @@ const Shoes = () => {
             </div>
             <div className="rating-button">
               <div className="rating">{item.rating}</div>
-              <button>Add To Card</button>
+              <button>Add To Cart</button>
             </div>
             <div className="card-icons">
               <FaHeart className="card-animated-icon" />
