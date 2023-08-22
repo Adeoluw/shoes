@@ -13,7 +13,7 @@ import background from "../image/bg1.png";
 const Hero = () => {
   return (
     <>
-      <section className="hero-section" id='hero'>
+      <section className="hero-section" id="hero">
         <div className="hero-text-section">
           <h1>
             NIKE <br /> COLLECTION
@@ -31,7 +31,9 @@ const Hero = () => {
             <FaLinkedin className="social-icons" />
           </div>
           <div className="shop-button">
-            <div className="button-animate">Shop Now</div>
+            <div className="button-animate">
+              <button>Shop Now</button>
+            </div>
             <FaAngleRight className="angle-icon" />
           </div>
         </div>

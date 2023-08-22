@@ -938,6 +938,10 @@ nav ul li a:hover{
     }
 
     nav ul{
-      padding: 0;
+      padding-inline: 10;
+    }
+
+    nav ul li a{
+      font-size: 12px;
     }
 }
