@@ -713,6 +713,10 @@ nav ul li a:hover{
   box-shadow: 1px 1px 4px black;
 }
 
+.open-nav{
+  display: none;
+}
+
 @media only screen and (max-width:946px) {
     header{
       width: 100%;
@@ -834,4 +838,106 @@ nav ul li a:hover{
         justify-content: center;
         align-items: center;
       }
+}
+
+@media only screen and (max-width: 650px){
+    nav{
+      display: block;
+      position: absolute;
+      top: 0;
+      border: 1px solid black;
+      border-left: none;
+      box-shadow: 0 0 0px black;
+      border-right: none;
+      width: 100%;
+      left: 0;
+      opacity: 0;
+      right: 0;
+      border-top: none;
+      transition: all .5s;
+      z-index: -1;
+      transition-timing-function: ease-in-out;
+    }
+
+  footer{
+    flex-direction: column-reverse;
+  }
+
+    .email-form button{
+      margin-right: auto;
+    }
+
+    .email-form input {
+      border-radius: 5px;
+      margin-left: auto;
+      width: 50%;
+      margin-right: auto;
+      height: 25px;
+    }
+
+        .footer-socials {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+        }
+
+
+      
+/* 
+
+    .open-nav:focus nav{
+      transform: translateY(40px);
+      opacity: 1;
+    } */
+
+    .open-nav{
+      display: block;
+      background-color: transparent;
+      border: none;
+    }
+
+    .service-text{
+      padding-inline: 100px;
+    }
+
+    .testmonial{
+      width: 345px;
+    }
+
+    .background{
+      display: none;
+    }
+
+    .hero-text-section h1 br{
+      display: none;
+    }
+
+    .hero-text-section{
+      text-align: center;
+      padding: 0;
+    }
+
+    .hero-text-section h1{
+      text-align: center;
+      font-size: 30px;
+    }
+
+    .hero-text-section p {
+      font-size: 20px;
+      padding-right: 0;
+      padding-inline: 15px;
+    }      
+
+    .shop-button{
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .socials{
+      bottom: 15px;
+    }
+
+    nav ul{
+      padding: 0;
+    }
 }
