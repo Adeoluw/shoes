@@ -34,7 +34,7 @@ const Login = () => {
               type="password"
               id="fname"
               name="password"
-              placeholder="User name.."
+              placeholder="Password"
             />
           </form>
           <button className="login-button">Login</button>

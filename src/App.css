@@ -944,4 +944,8 @@ nav ul li a:hover{
     nav ul li a{
       font-size: 12px;
     }
+
+        .login-form form {
+          width: 100%;
+        }
 }

@@ -49,7 +49,7 @@ const Footer = () => {
         <div className="lead-magnet">
           <h1>Newsletter</h1>
           <div className="email-form">
-            <input type="email" placeholder="Enter your emailY" />
+            <input type="email" placeholder="Enter your email" />
             <button>Subsribe</button>
           </div>
         </div>
